@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.right{
+    border: 2px solid black;
+    width: 250px;
+    height: 100%;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    position: absolute;
+    right: 0;
+}
+.one,.two,.three{
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+.one{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: po1 4s infinite;
+}
+.two{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: po2 4s infinite;
+}
+.three{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: po3 4s infinite;
+}
+.obj{
+    width: 100px;
+    height: 8px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+.obj1{
+    --angle:0deg;
+    --top:0px;
+    display: none;
+    width: 100px;
+    height: 8px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+.play{
+    animation: go 1s forwards;
+}
+@keyframes go {
+    0% {
+      top: 50%;
+      left: 0%;
+      transform:  rotate(--angle);
+    }
+    100% {
+      top:var(--top);
+      left: 100%;
+      transform:  rotate(--angle);
+    }
+}
+@keyframes po1 {
+    0%{
+        top: 5%;
+    }
+    25%{
+        top: 25%;
+    }
+    50%{
+        top: 5%;
+    }
+    75%{
+        top: 25%;
+    }
+    100%{
+        top:5%;
+    }
+}
+@keyframes po2 {
+    0%{
+        top: 55%;
+    }
+    25%{
+        top: 35%;
+    }
+    50%{
+        top: 55%;
+    }
+    75%{
+        top: 35%;
+    }
+    100%{
+        top:55%;
+    }
+}
+@keyframes po3 {
+    0%{
+        top: 65%;
+    }
+    25%{
+        top: 95%;
+    }
+    50%{
+        top: 65%;
+    }
+    75%{
+        top: 95%;
+    }
+    100%{
+        top:65%;
+    }
+}

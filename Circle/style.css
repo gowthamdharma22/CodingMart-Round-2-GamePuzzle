@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: visible;
+}
+body{
+    background: black;
+}
+.score{
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    top: 5rem;
+}
+.main{
+    display: flex;
+}
+.box{
+    border: 2px solid white;
+    height: 25rem;
+    width: 25rem;
+    margin: 8rem;
+    margin-left: 13.5rem;
+    padding: 4.5rem;
+}
+.c_bor{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 10rem;
+}
+.cir{
+    background: white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10rem;
+    margin-top: -8.5rem;
+    margin-left: 6.5rem;
+    animation: round 6s linear infinite;
+}
+.in_cir{
+    background: black;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10rem;
+    margin-top: -8.5rem;
+    margin-left: 6.5rem;
+    animation: round 6s linear infinite;
+    cursor: pointer;
+}
+.in_cir:hover{
+    background: rgb(136, 136, 136);
+}
+@keyframes round {
+    0%{transform: rotate(0deg)translate(-165px)rotate(0deg);
+    }
+    50%{transform: rotate(180deg)translate(-150px)rotate(180deg);
+    }
+    100%{transform: rotate(360deg)translate(-165px)rotate(360deg);
+    }
+}

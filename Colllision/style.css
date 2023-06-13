@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+    overflow: hidden;
+}
+body{
+    background: black;
+}
+.player,
+.object{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+}
+.object{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: 0.5s;
+    animation: ani 4s infinite linear;
+}
+
+.remove{
+   background: red;
+}

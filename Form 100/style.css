@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form{
+    display: flex;
+    gap: 3rem;
+    padding: 50px;
+}
+.l_show{
+    font-size: 25px;
+    font-family: sans-serif;
+    position: absolute;
+    left: 40px;
+    font-weight: 600;
+}
+.r_show{
+    font-size: 25px;
+    font-family: sans-serif;
+    position: absolute;
+    left: 18rem;
+    font-weight: 600;
+}
